@@ -7,4 +7,7 @@ Word count map reduce scripts:
 * https://github.com/glennklockwood/hpchadoop/tree/master/wordcount.py
 
 Equivalent series of pipes in terminal:
-`cat /home/hduser/data/ulysses | /home/hduser/scripts/mapper.py | sort -k1,1 | /home/hduser/scripts/reducer.py | sort -nrk2 | head -10`
+```
+cat /home/hduser/data/ulysses | /home/hduser/scripts/mapper.py | sort -k1,1 
+| /home/hduser/scripts/reducer.py | sort -nrk2 | head -10
+```
